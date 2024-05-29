@@ -4,17 +4,24 @@
 
 "use strict"
 
+// function for user display
 function numberDisplay() {
 
+  // get user input for min
   let userMax = document.getElementById("userMax").value;
+  // get user input for max
   let userMin = document.getElementById("userMin").value;
+  // empty string for displaying numbers
   let numbers = "";
+  // counter to see if user Min is equal to user Max
   let counter = userMin;
 
+  // while counter is not equal to userMax, update the counter unti it is equal to userMax
   while (counter <= userMax) {
     numbers = numbers + counter + "<br>";
     counter = counter++;
   }
+  // display the numbers
   document.getElementById("user-info").innerHTML = numbers;
 }
 
