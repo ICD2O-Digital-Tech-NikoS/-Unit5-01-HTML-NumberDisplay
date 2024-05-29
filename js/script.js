@@ -8,9 +8,9 @@
 function numberDisplay() {
 
   // get user input for min
-  let userMax = Number(document.getElementById("userMax").value);
+  let userMax = document.getElementById("userMax").value;
   // get user input for max
-  let userMin = Number(document.getElementById("userMin").value);
+  let userMin = document.getElementById("userMin").value;
   // empty string for displaying numbers
   let numbers = "";
   // counter to see if user Min is equal to user Max
