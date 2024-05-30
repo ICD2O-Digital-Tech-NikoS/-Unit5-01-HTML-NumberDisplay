@@ -8,9 +8,9 @@
 function numberDisplay() {
 
   // get user input for min
-  let userMax = document.getElementById("userMax").value;
+  let userMax = Number(document.getElementById("userMax").value);
   // get user input for max
-  let userMin = document.getElementById("userMin").value;
+  let userMin = Number(document.getElementById("userMin").value);
   // empty string for displaying numbers
   let numbers = "";
   // counter to see if user Min is equal to user Max
@@ -21,11 +21,12 @@ function numberDisplay() {
     numbers = numbers + counter + " ";
     counter++;
   }
-  // display the numbers
-  document.getElementById("user-info").innerHTML = numbers;
 
   if (userMin > userMax) {
     document.getElementById("user-info").innerHTML = "Your minimum is greater than your maximum. Please try again.";
+  } else {
+    // display the numbers
+    document.getElementById("user-info").innerHTML = numbers;
   }
 }
 
