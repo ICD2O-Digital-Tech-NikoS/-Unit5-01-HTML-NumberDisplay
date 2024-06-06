@@ -5,20 +5,23 @@
 "use strict"
 
 // function for user display
-function numberDisplay() {
+function numberAddition() {
 
   // get user input for min
   let userMax = Number(document.getElementById("userMax").value);
   // get user input for max
   let userMin = Number(document.getElementById("userMin").value);
+  let userInt = Number(document.getElementById("userInt").value);
   // empty string for displaying numbers
-  let numbers = "";
+  let displayMessage = "";
   // counter to see if user Min is equal to user Max
   let counter = userMin;
 
+  let sum = 0;
+
   // while counter is not equal to userMax, update the counter unti it is equal to userMax
   while (counter <= userMax) {
-    numbers = numbers + counter + " ";
+    sum =  userInt + counter;
     counter++;
   }
 

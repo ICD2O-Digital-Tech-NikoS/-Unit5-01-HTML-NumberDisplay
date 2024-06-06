@@ -4,7 +4,7 @@
   <head>
     <!-- Meta data section -->
     <meta charset="utf-8">
-    <meta name="description" content="Number Display, Using Javascript">
+    <meta name="description" content="Number Addition, Using Javascript">
     <meta name="keywords" content="immaculata, icd2o">
     <meta name="author" content="Niko Shivkumar">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,14 +18,14 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Title -->
-    <title>Number Display</title>
+    <title>Number Addition</title>
     <!-- references javascript file -->
     <script src="./js/script.js"></script>
   </head>
 
   <body>
-    <h1>Number Display</h1>
-    <h3>Enter a minimum and a maximum, then the program will display all numbers from your minimum to maximum numbers.</h3>
+    <h1>Number Addition</h1>
+    <h3>Enter a minimum and a maximum, and an integer.</h3>
     <!-- form for user input for min and max -->
     <form action="javascript: numberDisplay()">
       <p>
@@ -33,6 +33,8 @@
         <input type="number" id="userMin" step="1" placeholder="Enter a Minimum"><br><br>
         <label for="userMax">Enter a number</label>
         <input type="number" id="userMax" step="1" placeholder="Enter a Maximum"><br><br>
+        <label for="userInt">Enter a number</label>
+        <input type="number" id="userInt" step="1" placeholder="Enter an Integer"><br><br>
         <input type="submit">
       </p>
     </form>
